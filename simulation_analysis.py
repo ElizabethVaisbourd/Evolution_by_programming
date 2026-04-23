@@ -47,7 +47,7 @@ mean_d, var_d = darwin.mean(), darwin.var()
 mean_l, var_l = lamarck.mean(), lamarck.var()
 mean_c, var_c = combined.mean(), combined.var()
 
-fig, axes = plt.subplots(1, 3, figsize=(18, 5))
+fig, axes = plt.subplots(1, 3, figsize=(13, 5))
 
 
 def poisson_fit_score(data):
