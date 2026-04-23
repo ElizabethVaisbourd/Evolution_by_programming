@@ -134,7 +134,7 @@ darwin_capped[darwin_capped > lamarck_max] = lamarck_max + 1
 combined_capped = combined.copy()
 combined_capped[combined_capped > lamarck_max] = lamarck_max + 1
 
-fig_capped, axes_capped = plt.subplots(1, 3, figsize=(18, 5))
+fig_capped, axes_capped = plt.subplots(1, 3, figsize=(13, 5))
 
 # Darwinian
 axes_capped[0].hist(darwin_capped, bins=np.arange(-0.5, lamarck_max + 2.5, 1), alpha=0.7, color='blue')
