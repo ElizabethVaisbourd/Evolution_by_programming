@@ -47,9 +47,6 @@ mean_d, var_d = darwin.mean(), darwin.var()
 mean_l, var_l = lamarck.mean(), lamarck.var()
 mean_c, var_c = combined.mean(), combined.var()
 
-fig, axes = plt.subplots(1, 3, figsize=(13, 5))
-
-
 def poisson_fit_score(data):
     data = np.asarray(data, dtype=int)
     lam = np.mean(data)
@@ -90,7 +87,7 @@ bins_c = np.arange(-0.5, combined.max() + 1.5, 1)
 
 # FIG1
 
-fig, axes = plt.subplots(1, 3, figsize=(18, 5))
+fig, axes = plt.subplots(1, 3, figsize=(13, 5))
 
 # Darwinian
 axes[0].hist(darwin, bins=bins_d, density=True, alpha=0.7, color='blue', label='Darwinian')
