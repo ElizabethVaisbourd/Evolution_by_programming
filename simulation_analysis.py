@@ -4,8 +4,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import poisson, chisquare
 import numpy as np
+import os
 
+file_path = "luria_delbruck_simulation.csv"
 
+if not os.path.exists(file_path):
+    st.error(f"File not found: {file_path}")
+    st.stop()
 
 
 # load data
